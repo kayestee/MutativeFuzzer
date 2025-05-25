@@ -1,4 +1,4 @@
-package main // Package main, Do not change this line.
+package main 
 
 import (
 	"context"
@@ -11,13 +11,6 @@ import (
 	"syscall"
 	"time"
 )
-
-// Product represents the structure for a product entity
-
-// SupplyChainContract defines the smart contract structure
-type SupplyChainContract struct {
-	// To Do
-}
 
 func main() {
 
@@ -41,14 +34,8 @@ func main() {
 	input_prog = os.Args[3]
 	seedfile = os.Args[4]
 	output_file = os.Args[5]
-	// fmt.Println("prng seed", prng_seed)
-	// fmt.Println("iteration times", num_of_iterations)
-	// fmt.Println("input prog ", input_prog)
-	// fmt.Println("output prog ", output_file)
-
+	
 	inpbytes, err := os.ReadFile(seedfile)
-
-	// inpbytes, _ := hex.DecodeString(string(inp))
 
 	if err != nil {
 		fmt.Printf("Seed File cannot be read Check permissions")
